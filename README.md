@@ -11,6 +11,6 @@ now supports copying.
 
 ### Usage
 
-'''python
+```python
 python3 mv_ext.py <source dir> <dest dir> <suffix>
-'''
+```
