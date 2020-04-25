@@ -12,6 +12,14 @@ def main(argv):
         return -1
 
 
+    total = 0
+    for root,dirs,names in os.walk(argv[0]):
+        for filename in names:
+
+            if filename.endswith(argv[2]):
+                total += 1
+    
+
 
     for root,dirs,names in os.walk(argv[0]):
         for filename in names:
@@ -25,6 +33,9 @@ def main(argv):
                     try:
                         shutil.copyfile(os.path.join(root, filename), os.path.join(argv[1], dest))
                         success = True
+                        print("copied "+ os.path.join(root, filename) +" to "+ os.path.join(argv[1], dest))
+
+
                     except shutil.Error:
                         attempts += 1
                         dest =  str(attempts) + filename
