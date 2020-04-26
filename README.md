@@ -11,6 +11,20 @@ now supports copying.
 
 ### Usage
 
-```python
-python3 mv_ext.py <source dir> <dest dir> <suffix>
+```bash
+python3 mv_ext.py [-h] [-c | -p | -m] [-o OUTPUT_DIR] i suffix
+
+print/move/copy files recursively
+
+positional arguments:
+  i
+  suffix
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -c, --copy
+  -p, --print
+  -m, --move
+  -o OUTPUT_DIR, --output_dir OUTPUT_DIR     default='.'
+
 ```
