@@ -18,7 +18,7 @@ python3 mv_ext.py [-h] [-c | -p | -m] [-o OUTPUT_DIR] i suffix
 print/move/copy files recursively
 
 positional arguments:
-  i
+  i                     source directory
   suffix
 
 optional arguments:
