@@ -2,12 +2,13 @@
 Simple scripts by me
 
 ## mv_ext.py
+Moves/copys/prints files with some suffix in a directory recursively to somewhere else.
 
-Under construction.
+Under construction. 
 
-Moves/copys/prints files with some suffix in a directory recursively to somewhere else 
+TODO:
+Handle exceptions more carefully.
 
-now supports copying.
 
 ### Usage
 
